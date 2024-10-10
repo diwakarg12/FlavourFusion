@@ -2,7 +2,7 @@
 
 const SweetToothCard = ({img, text}) => {
   return (
-    <div>
+    <div className="hover:text-orange-500">
         <div className="overflow-hidden rounded-lg">
             <img src={img} alt={text} className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110" />
         </div>

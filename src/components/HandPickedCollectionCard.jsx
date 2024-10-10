@@ -2,7 +2,7 @@
 
 const HandPickedCollectionCard = ({img, text}) => {
   return (
-    <div className="border rounded-t-md mb-12">
+    <div className="border rounded-t-md mb-12 hover:text-orange-500">
         <div className="w-[34rem] h-80 overflow-hidden">
         <img
           src={img}

@@ -2,7 +2,7 @@
 
 const LatestRecipeCard = ({img, text}) => {
   return (
-    <div className="">
+    <div className="hover:text-orange-500">
         <div className="w-68 rounded-lg overflow-hidden">
           <img
           src={img}

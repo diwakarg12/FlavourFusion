@@ -1,13 +1,16 @@
 import SuperDeliciousCard from "./SuperDeliciousCard"
-
+import delicious from "../data/delicious"
+import { Link } from "react-router-dom"
 const SuperDelicious = () => {
   return (
-    <div className="m-10">
+    <div className="m-10 ">
         <h1 className="font-playfair font-bold text-4xl my-4">Super Delicious</h1>
         <div className="flex items-center justify-between">
-            <SuperDeliciousCard img={'images/delicious1.jpg'} text={'Spinach and Cheese Pasta'} />
-            <SuperDeliciousCard img={'images/delicious2.jpg'} text={'Fancy Glazed Dounts'} />
-            <SuperDeliciousCard img={'images/delicious3.jpg'} text={'Mighty Cheesy Breakfast Burger'} />
+            {
+              delicious.map((recipe)=>(
+                <Link key={recipe.id} to={`/recipe/${recipe.id}`}><SuperDeliciousCard  img={recipe.img} text={recipe.title} /></Link>
+              ))
+            }
         </div>
     </div>
   )

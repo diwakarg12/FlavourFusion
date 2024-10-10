@@ -2,7 +2,7 @@
 
 const PopularCategoriesCard = ({img, text}) => {
   return (
-    <div className="">
+    <div className="hover:text-orange-500">
         <div className="border-2 rounded-full overflow-hidden">
             <img src={img} alt={text} className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110" />
         </div>

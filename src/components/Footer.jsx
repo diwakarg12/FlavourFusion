@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="bg-[#f9f9f9] px-12">
         <div className=" py-10 flex items-center justify-around">
         <div className="w-2/5">
-            <Link to={'/'}><img src="images/logo-black.png" alt="Logo" className="w-52 h-16" /></Link>
+            <Link to={'/'}><img src="/images/logo-black.png" alt="Logo" className="w-52 h-16" /></Link>
             <p className="font-inter font-normal text-xl">
                 On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment
             </p>
